@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Encryption and Decryption</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Encryption and Decryption Villegas</h1>
+
+    <div class="tabs">
+      <button class="tablinks active" onclick="openTab(event, 'Encryption')">Encryption/Decryption</button>
+      <button class="tablinks" onclick="openTab(event, 'Videos')">Videos</button>
+      <button class="tablinks" onclick="openTab(event, 'Discussion')">Discussion Board</button>
+    </div>
+    <!--Dean Clyde Villegas-->
+    <!-- Encryption and Decryption Tab -->
+    <div id="Encryption" class="tabcontent" style="display:block;">
+      <!-- Encryption Section -->
+      <div class="encryption-section">
+        <h2>Encryption</h2>
+        <label for="inputText">Enter message to encrypt:</label>
+        <input type="text" id="inputText" />
+
+        <label for="shiftValue">Enter shift value:</label>
+        <input type="number" id="shiftValue" />
+
+        <button onclick="encryptText()">Encrypt</button>
+
+        <div class="result-frame">
+          <p>Encrypted Text: <span id="encryptedText"></span></p>
+        </div>
+      </div>
+
+      <!-- Decryption Section -->
+      <div class="decryption-section">
+        <h2>Decryption</h2>
+        <label for="encryptedInput">Enter message to decrypt:</label>
+        <input type="text" id="encryptedInput" />
+
+        <label for="shiftValueDecrypt">Enter shift value:</label>
+        <input type="number" id="shiftValueDecrypt" />
+
+        <button onclick="decryptText()">Decrypt</button>
+
+        <div class="result-frame">
+          <p>Decrypted Text: <span id="decryptedText"></span></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Videos Tab -->
+    <div id="Videos" class="tabcontent">
+      <h2>Videos on Encryption and Decryption in Cybersecurity</h2>
+      <div class="video-library">
+        <h3>Video 1: Introduction to Encryption</h3>
+        <video width="640" height="360" controls>
+          <source src="video1.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+
+        <h3>Video 2: Advanced Encryption Techniques</h3>
+        <video width="640" height="360" controls>
+          <source src="video2.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+
+        <h3>Video 3: Practical Encryption in Action</h3>
+        <video width="640" height="360" controls>
+          <source src="video3.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <!-- Optional Back Button -->
+      <button class="nav-button" onclick="openTab(event, 'Encryption')">Back to Encryption</button>
+    </div>
+
+    <!-- Discussion Tab -->
+    <div id="Discussion" class="tabcontent">
+      <h2>Discussion Board</h2>
+      <div class="discussion-topics">
+        <div class="discussion-topic">
+          <h3>Why is encryption important? (value and usage of encryption)</h3>
+          <p>
+            <strong>Answer:</strong> Encryption is crucial for protecting sensitive data from unauthorized access. It ensures confidentiality, integrity, and authenticity in digital communications and storage.
+          </p>
+        </div>
+        <div class="discussion-topic">
+          <h3>Can encryption be misused? (scenarios)</h3>
+          <p>
+            <strong>Answer:</strong> Yes, encryption can be misused in various scenarios such as hiding illegal activities or protecting malware.
+          </p>
+        </div>
+        <div class="discussion-topic">
+          <h3>Ethical concerns about encryption</h3>
+          <p>
+            <strong>Answer:</strong> There are ethical concerns about law enforcement access and privacy, such as the debate on “backdoors” in encryption systems.
+          </p>
+        </div>
+      </div>
+      <div class="references">
+        <h3>References</h3>
+        <ol>
+          <li>Stallings, W. (2018). <em>Cryptography and Network Security: Principles and Practice</em>.</li>
+          <li>Bishop, M. (2005). <em>Computer Security: Art and Science</em>.</li>
+          <li>Schneier, B. (2015). <em>Data and Goliath</em>.</li>
+          <li>Landau, S. (2016). <em>Listening in: Cybersecurity in an Insecure Age</em>.</li>
+        </ol>
+      </div>
+      <!-- Optional Back Button -->
+      <button class="nav-button" onclick="openTab(event, 'Encryption')">Back to Encryption</button>
+    </div>
+  </div>
+
+  <script src="tabs.js"></script>
+</body>
+</html>

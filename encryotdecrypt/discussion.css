@@ -1,0 +1,54 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    background-color: #20293e; /* Darkest blue from the color scheme */
+    color: #f0f0f0; /* Off-white for better contrast */
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    background-color: #2c3e50; /* Mid-blue from the color scheme */
+    padding: 20px;
+    border-radius: 5px;
+}
+
+h1 {
+    color: #f1c40f; /* Light yellow from the color scheme */
+}
+
+.discussion-topics {
+    margin-top: 20px;
+}
+
+.discussion-topic {
+    border: 1px solid #555;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.discussion-topic h3 {
+    color: #f1c40f; /* Light yellow for the question */
+}
+
+.discussion-topic p {
+    margin-top: 10px;
+}
+
+.references {
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+.references h3 {
+    color: #e74c3c; /* Red for the references title */
+}
+
+.references ol {
+    list-style-type: decimal;
+    padding-left: 20px;
+}
+
+.references li {
+    margin-bottom: 5px;
+}
